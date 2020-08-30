@@ -3,4 +3,4 @@ author = Motley
 version = 0.1
 hideCode = false
 includeSource = true
-homepage = https://github.com/NotSoEpic/TrueEndless
+homepage = https://github.com/Merhaf/TrueEndless
