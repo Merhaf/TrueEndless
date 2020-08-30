@@ -20,7 +20,7 @@ namespace TrueEndless
         private bool HasInfinity(Player player) => player.GetModPlayer<EndlessPlayer>().infinity;
         public bool IsEndlessAmmo(Item item) => (item.stack >= item.maxStack || item.stack >= 999) && item.maxStack > 1 && item.ammo != AmmoID.None;
         public bool IsEndlessPotion(Item item) => (item.stack >= item.maxStack || item.stack >= 30) && item.maxStack > 1 && item.buffType != 0;
-        public bool IsEndlessConsumable(Item item) => (item.stack >= item.maxStack || item.stack >= 30) && item.maxStack > 1 && (item.consumable || wasConsumable) && item.createTile == -1 && item.createWall == -1;
+        public bool IsEndlessConsumable(Item item) => (item.stack >= item.maxStack || item.stack >= 999) && item.maxStack > 1 && (item.consumable || wasConsumable) && item.createTile == -1 && item.createWall == -1;
         public bool IsEndlessSpecific(Item item)
         {
             int[] ids = new int[]
